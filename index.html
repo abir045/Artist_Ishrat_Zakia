@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+   
+   
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Israt Zakia</title>
+</head>
+<body>
+    <div class="portfolio">
+    
+            <div class="wrapper">
+              
+                <div class="hero-section">
+                    <div class="open-menu">
+                         <i class="fas fa-bars"></i> 
+                    
+                </div>  
+            
+                <div class="menu-container">
+                    <div class="close-menu">
+                        <i class="far fa-window-close"></i>
+        
+                    </div>
+                    <div class="brand-logo">
+                        <div class="logo"><img height="100px" src="./img/frame6.svg" alt=""></div>
+                    </div>
+                    <div class="menu-links">
+                        <div class="link menu-link-1">
+                            <a href="#">Home</a>
+                        </div>
+                        <div class="link menu-link-2">
+                            <a href="./illustrations.html">Portfolio</a>
+                        </div>
+                        <div class="link menu-link-3">
+                            <a href="./photo.html">About</a>
+                        </div>
+                        <div class="link menu-link-4">
+                            <a href="https://www.instagram.com/ishrat.zakia/">Contact<i class="fab fa-instagram-square"></i></a>
+                        </div>
+                        
+                        
+            
+                    </div>
+<!-- 
+                    <div class="social-media">
+                        <div class="link">
+                            <a href="https://www.instagram.com/ishrat.zakia/"><i class="fab fa-instagram-square"></i></a>
+                        </div>
+                        
+                    </div> -->
+                    
+        
+                </div>
+        
+            </div>
+            </div>
+
+             
+
+           
+               
+      
+        <main>
+           <section class="page artist">
+           <div class="details">
+               <h1>Israt Zakia</h1>
+               <h2>Artist</h2>
+           </div>
+
+           <div class="hero">
+               <a href="./photo.html">
+               <img  class="model-left" src="./img/l1.jpg" alt="left image">
+               <img class="model-right"src="./img/l2.jpg" alt="right image">
+            </a>
+
+           </div>
+
+           </section>
+           <div class="pages"></div>
+        </main>
+    </div>
+    <script>
+         var t1 = gsap.timeline();
+
+t1.to(".menu-container", 0.4, {
+  right:'0%'
+});
+
+t1.staggerFrom(".link", 0.4, { opacity: 0 }, 0.1, "-=0.2");
+
+t1.reverse();
+
+$(document).on("click", ".open-menu", function () {
+    t1.reversed(!t1.reversed());
+});
+$(document).on("click", ".close-menu", function () {
+    t1.reversed(!t1.reversed());
+});
+        
+
+
+    </script>
+    
+    <script src="app.js"></script>
+   
+</body>
+</html>
